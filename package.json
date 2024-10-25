@@ -1,0 +1,43 @@
+{
+  "name": "api-express-wrley-ads",
+  "version": "1.0.0",
+  "description": "API Node com framework Express",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --env-file=.env --watch src/server.js",
+    "prisma:local:pull": "npx prisma db pull --schema=./prisma/schema.local.prisma",
+    "prisma:local:push": "npx prisma db push --schema=./prisma/schema.local.prisma",
+    "prisma:local:generate": "npx prisma generate --schema=./prisma/schema.local.prisma",
+    "prisma:local:studio": "npx prisma studio --schema=./prisma/schema.local.prisma",
+    "prisma:pull": "npx prisma db pull --schema=./prisma/schema.production.prisma",
+    "prisma:push": "npx prisma db push --schema=./prisma/schema.production.prisma",
+    "prisma:generate": "npx prisma generate --schema=./prisma/schema.production.prisma"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wrleymartins/express-wrley-app-ads.git"
+  },
+  "keywords": [
+    "api",
+    "node",
+    "express",
+    "zod"
+  ],
+  "author": "Wrley Martins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wrleymartins/express-wrley-app-ads/issues"
+  },
+  "homepage": "https://github.com/wrleymartins/express-wrley-app-ads#readme",
+  "dependencies": {
+    "@prisma/client": "^5.18.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "prisma": "^5.18.0"
+  }
+}
